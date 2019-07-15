@@ -54,7 +54,7 @@ table {
 
 html, body {
     height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+	font-family: 'Titillium Web', sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
@@ -63,4 +63,171 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
+
+
 /* Your code starts here! */
+.container{ /*main shape of page*/
+	position:relative;
+	margin:auto;
+	width:876px;
+}
+
+/*------code for the top bar-----*/
+.container header {
+	position: fixed;
+	top: 27px;
+	background-color: steelblue;
+	width:876px;
+	z-index: 1;
+}
+.container header nav{
+	left: 0px;
+	top:-13px;
+	position:relative;
+	display:inline-block;
+}
+.container header nav a{
+	margin-right: 63px;
+	display:inline-block;
+	position:relative;
+	top:25%;
+	text-decoration-line:none;
+	font-size: 14px;
+	color:white;
+}
+.logo{
+	position:relative;
+	display:inline-block;
+	left:30px;
+	top: -2px;
+}
+/*---end code of top bar---*/
+
+/*---Innovation on Demand Section---*/
+.main{
+	position:absolute;
+	top:36px;
+	display:block;
+}
+.main div{
+	position: relative;
+	display: inline-block;
+}
+h1{
+	display:inline-block;
+	position:relative;
+	text-align: center;
+	font-size: 75px;
+	bottom: 20px;
+	left: 88px;
+	transform: scaleX(1.1);
+}
+.code-image{
+	position: relative;
+	display:inline-block;
+	left:12px;
+	top: 88px;
+
+	/*animation-stretch*/
+	transition: transform 10s;
+}
+.code-image:hover{
+	transform: rotate(900deg);
+	/*animation: rotation 2s infinite linear;*/
+}
+@keyframes{
+	from{transform: rotate(0deg);}
+	to{transform: rotate(150deg);}
+}
+.main div a{   /*---BUTTON---*/
+	position: relative;
+	display: inline-block;
+	padding: 7px 41px;
+	text-align: center;
+	text-decoration-line:none;
+	display: inline-block;
+	font-size: 19px;
+	top:33px;
+	right:155px;
+	border:1px black solid;
+	color:black;
+
+	/*stretch animation*/
+	transition: transform 3s, font-weight 2s;
+}
+.main div a:hover{
+	transform: scale(1.3);
+	font-weight: bold;
+}
+/*----End Innovation on Demand section----*/
+
+
+article{
+	position:absolute;
+	top: 571px;
+}
+article div{
+	position: relative;
+	display: inline-block;
+	line-height: 17px;
+}
+article section{
+	position: relative;
+	display: inline-block;
+}
+
+
+.top-section{
+	display: inline-block;
+	top: 30px;
+	width: 876;
+}
+.top-section div{
+	width:430px;
+}
+.top_left{
+	left:0px;
+}
+.top_right{
+	left: 15px;
+}
+
+
+.middle-img{
+	position: relative;
+	top: 71px;
+}
+
+
+.bottom-section div{
+position:relative;
+width: 280px;
+display: inline-block;
+top:107px;
+line-height: 18px;
+}
+.bottom-left{
+	left:1px;
+}
+.bottom-mid{
+	left:17px;
+}
+.bottom-right{
+	left:31px;
+}
+
+footer{
+	position: absolute;
+	display: inline-block;
+	top:1166px;
+	left: 2px;
+	line-height: 18px;
+}
+footer p{
+	position:relative;
+	top:51px;
+	width: 876px;
+	text-align:center;
+	font-size: 14px;
+	transform:scaleX(0.99);
+}
